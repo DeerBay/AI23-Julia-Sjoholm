@@ -8,14 +8,14 @@ Det finns flera alternativ för vilka format vi kan välja att bevara våra data
 Man kan ladda data på en lokal server om utrymme och möjligheter för det existerar, en annan möjlighet är att förvara det i någon molntjänst.
 
 ## Visualisering av data
-Visualisering, eller grafiska presentation, kan göras med hjälp av diagram eller kartor. Grafen skulle då kunna visa hur antal kvadrat på en lägenhet hade en korrelation med slutpriset eller att närheten till vatten påverkade slutpriset. Ett hjälpmedel som vi skulle kunna använda är då matplotlib (se nedan bild)
+Visualisering, eller grafiska presentation, kan göras med hjälp av diagram eller kartor. Grafen skulle då kunna visa hur antal kvadrat på en lägenhet hade en korrelation med slutpriset eller att närheten till vatten påverkade slutpriset. Ett hjälpmedel som vi skulle kunna använda är då matplotlib (se nedan bild).
 
-Bearbeta data till rätt format
+![Visualisering av data](https://github.com/DeerBay/AI23-Julia-Sjoholm/blob/f29f269b9663356261865fc62ec7c71e1f357468/pictures/numpy.jpg)
+
+## Bearbeta data till rätt format
 En start för att processa och börja preparera den data som ska ingå i modellen är att bestämma vilka värden/attribut vi ska använda oss av. Är det bara kvadratmeter och boytan, eller ska man ha flera värden så som antal rum, skick på fastigheten, uppgifter om det finns en pool ock så vidare. 
 
 När vi väl har avgränsat vilka värden som är av signifikans för våra slutpriser börjar vi tvätta bort de oönskade värdena i vårt dataset samt tar bort extremer för de värden som valts att användas. Det gäller då värden som sticker ut avsevärt från mängden då dessa kan påverka vår slutgiltiga modell åt något håll. Vi behöver också se till att det är representativ data vi använder oss av. Om vi bara skulle träna modellen på data innehållande slutpriser på hus på Lidingö i Stockholm eller bara från Haparanda  osv. Skulle vi vilja göra en modell för enbart de områdena hade det kunnat fungera men om vi önskar en mer generell modell för huspriser i Sverige måste den representera hela landet. Vi behöver också behandla saknade värden, antingen genom att raderna tas bort, ges ett snittvärde alternativt interpolerande värden (värden som ligger i närheten av andra värden).
-
-![Visualisering av data](https://github.com/DeerBay/AI23-Julia-Sjoholm/blob/f29f269b9663356261865fc62ec7c71e1f357468/pictures/numpy.jpg)
 
 ## Linjär regression
 Linjär regression används ofta i samband med en regressionsanalys. Det är den mest grundläggande typen av regressionsmodell. Det innebär ett linjärt förhållande mellan variablerna i datan. Om den ena variabeln ökar eller minskar kommer också den andra variabeln öka eller minska.
