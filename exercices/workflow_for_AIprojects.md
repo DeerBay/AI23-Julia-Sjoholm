@@ -48,7 +48,7 @@ I utvärderingen är det viktigt att ställa frågor som är det en användbar m
 4.	Training and testing the model
 5.	Evaluation
 
-![ML Model deployment](pictures\Machine_Learning_Model_Deployment_Tutorial.webp)
+![ML Model deployment](https://github.com/DeerBay/AI23-Julia-Sjoholm/blob/87ab8126f6d234c15f3b9a7e4e2e8895dbb56f2b/pictures/Machine_Learning_Model_Deployment_Tutorial.jpg)
 
 ### *Källor:*
 Svensk Nationell datatjänst 
